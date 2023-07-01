@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gasolinera.MainPage">
+
+    <ScrollView BackgroundColor="MistyRose">
+        <VerticalStackLayout
+            Spacing="35"
+            Padding="35,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="galo.jpg"
+                HeightRequest="300"
+                HorizontalOptions="Center"/>
+
+            <Label Text="Ingrese los galones" TextColor="DarkGreen"/>
+            <Entry x:Name="Gal" Placeholder="Galones" TextColor="Black"/>
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="Ver resultado"
+                BackgroundColor="LightPink"
+                BorderWidth="2"
+                Clicked="CounterBtn_Clicked"
+                TextColor="Black"
+                HorizontalOptions="Center" />
+            
+            <Label Text="El total a pagar es:" TextColor="DarkGreen"/>
+            <Entry x:Name="litro" Placeholder="Pago" IsEnabled="False"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
